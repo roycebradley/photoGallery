@@ -14,7 +14,7 @@ import Mobilenav from "./components/mobileNav";
 // Add links to insta + portfolio - complete
 // Refactor and add comments
 // Add to wordpress as a template
-// Github
+// Github - complete
 // Domain + Publishing
 
 

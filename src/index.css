@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Press+Start+2P&display=swap');
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,3 +14,195 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.App{
+  margin-top: 3%;
+}
+
+.mobileIcon {
+  display: none;
+  z-index: 2;
+}
+
+#mycheckbox {
+  display: none;
+}
+
+nav{
+  /* position: absolute;
+  top: -320px;
+  height: 305px; */
+  visibility: hidden;
+  height: 0px;
+  width: 100%;
+  background-color: rgb(245, 243, 243);
+  font-family: "Press Start 2P";
+}
+
+nav ul {
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+  position: relative;
+  top: -320px;
+}
+
+nav ul li{
+  width: 100%;
+  line-height: 100px;
+  border-bottom: 1px solid;
+}
+
+nav ul li a{
+  font-size: 14px;
+}
+
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  margin-left: 20%;
+  text-align: center;
+  width: 75%;
+}
+
+
+.fullNav {
+  width: 8%;
+  list-style-type: none;
+  text-align: right;
+  display: inline-block;
+  padding-top: 0.1%;
+  margin-left: 3%;
+  margin-top: 0px;
+  position: fixed;
+  left: 1%;
+  font-family: "Press Start 2P";
+  font-size: 12px;
+  font-style: italic;
+  padding: 0;
+  width: 15%
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  font-style: normal;
+}
+
+.fullNav li {
+  line-height: 35px;
+  width: 100%;
+  display: block;
+}
+
+img {
+  width: 95%;
+  padding-top: 1%;  
+  padding-left: 1%;
+}
+
+h1 {
+  display: block;
+  float: right;
+  font-family: "Press Start 2P";
+  font-size: 24px;
+  width: 100%;
+}
+
+span {
+  color: rgb(114, 108, 108);
+}
+
+svg{
+  height: 75%;
+  width: 75%;
+}
+
+a{
+  display: inline-block;
+}
+
+a svg {
+  height: 17px;
+  width: 17px;
+  margin-right: 10px;
+}
+
+a img {
+  height: 18px;
+  width: 19px;
+}
+
+
+@media (max-width: 800px) {
+
+  .App {
+    margin-top: 0%;
+  }
+
+   nav ul{
+     margin-top: 0%;
+     transition: all 650ms;
+   }
+
+   nav {
+     transition: all 650ms;
+   }
+
+
+    .mobileIcon {
+      float: left;
+      margin-left: 1%;
+      display: block;
+      position: absolute;
+      margin-top: 4%;
+    }
+
+    .mobileIcon .burgerIcon{
+      height: 40px;
+      width: 40px;
+      cursor: pointer;
+    }
+
+    #mycheckbox:checked + nav {
+      height: 305px;
+      visibility: visible;
+    }
+
+    #mycheckbox:checked + nav ul {
+      top: 0px
+    }
+
+
+   .fullNav { 
+      position: static;
+      padding: 0;
+      width: 25%;
+      text-align: center;
+      margin-top: 3%;
+   }
+
+   h1 {
+     width: 90%;
+     float: left;
+     
+   }
+
+  .fullNav a {
+     display: none;
+   }
+
+  .container {
+     margin: 0% auto;
+     width: 90%;
+   }
+
+   svg{
+     display: inline-block;
+   }
+
+}
+
+

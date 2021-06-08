@@ -1,3 +1,5 @@
+//mobile view menu
+
 function mobileNav(){
     return (
       <nav>

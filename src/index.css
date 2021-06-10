@@ -17,6 +17,7 @@ code {
 
 .App{
   margin-top: 3%;
+  scroll-behavior: smooth;
 }
 
 h5 {
@@ -179,6 +180,26 @@ a img {
   grid-row: span 2;
 }
 
+#arrow {
+    height: 25px;
+    width: 25px;
+    float: left;
+    position: fixed;
+    top: 90%;
+    right: 85%;
+    animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+
+    0% {opacity: 0;}
+    25% {opacity: 0.4;}
+    75% {opacity: 0.8;}
+    100% {opacity: 1;}
+     
+   }
+
+
 /* Single column view breakpoint */
 
 @media (max-width: 1000px) {
@@ -193,6 +214,16 @@ a img {
 /* Hamburger menu breakpoint */
 
 @media (max-width: 800px) {
+
+  #arrow {
+    height: 25px;
+    width: 25px;
+    float: left;
+    position: fixed;
+    top: 90%;
+    right: 92%;
+  
+  }
 
   .App {
     margin-top: 0%;
@@ -278,6 +309,15 @@ a img {
    .fullNav{
      padding-left: 0;
      padding-right:7%;
+   }
+
+   #arrow{
+     position: fixed;
+     right: 45%;
+     bottom: 20%;
+     height: 40px;
+     width: 40px;
+     
    }
 
 }

@@ -75,7 +75,7 @@ function Grid() {
 
             <div className='gallery-container w-4'>
                 <div className="content">
-                    <img src="/photos/IMG_0993.jpeg"></img>
+                    <img src="/photos/IMG_9742.jpeg"></img>
                 </div>
             </div>
 
@@ -89,7 +89,7 @@ function Grid() {
 
             <div className='gallery-container w-4'>
                 <div className="content">
-                    <img src="/photos/IMG_0834.jpeg"></img>
+                    <img src="/photos/IMG_0843.jpeg"></img>
                 </div>
             </div>
 
